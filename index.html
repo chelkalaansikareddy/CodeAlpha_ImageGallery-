@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>✨ Pixel Gallery</h1>
+    <p>Explore beautiful moments through different categories</p>
+
+    <input type="text" id="searchBox" placeholder="🔍 Search images...">
+</header>
+
+<nav class="filters">
+    <button type="button" class="filter-btn active" data-filter="all">All</button>
+    <button type="button" class="filter-btn" data-filter="places">Places</button>
+    <button type="button" class="filter-btn" data-filter="flowers">Flowers</button>
+    <button type="button" class="filter-btn" data-filter="food">Food</button>
+    <button type="button" class="filter-btn" data-filter="animals">Animals</button>
+    <button type="button" class="filter-btn" data-filter="nature">Nature</button>
+    <button type="button" class="filter-btn" data-filter="travel">Travel</button>
+    <button type="button" class="filter-btn" data-filter="architecture">Architecture</button>
+    <button type="button" class="filter-btn" data-filter="art">Art</button>
+</nav>
+
+<main>
+    <section class="gallery" id="gallery">
+
+        <!-- PLACES -->
+        <div class="card" data-category="places" data-title="Mountain Lake">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.tjz6_OUGxRUAuN0vM95ixwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mountain Lake">
+            <div class="caption">
+                <h3>Mountain Lake</h3>
+                <p>Places</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="places" data-title="City View">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.CIY_2b2itCQYYOZ_0-PUkwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="City View">
+            <div class="caption">
+                <h3>City View</h3>
+                <p>Places</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="places" data-title="Beach">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Beach">
+            <div class="caption">
+                <h3>Beautiful Beach</h3>
+                <p>Places</p>
+            </div>
+        </div>
+
+        <!-- FLOWERS -->
+        <div class="card" data-category="flowers" data-title="Pink Flower">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.GmzXTSeWD-yFAIy_0QfZ4QHaE1?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pink Flower">
+            <div class="caption">
+                <h3>Water lillies</h3>
+                <p>Flowers</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="flowers" data-title="Tulips">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.LvEl7bxftxDEvSkWiuA6rwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tulips">
+    <div class="caption">
+        <h3>Beautiful Tulips</h3>
+        <p>Flowers</p>
+    </div>
+</div>
+        <div class="card" data-category="flowers" data-title="Purple Flower">
+            <img src="https://th.bing.com/th/id/OIP.QeVpu4-IwnrHgvFka6aKOAHaFA?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Purple Flower">
+            <div class="caption">
+                <h3>Purple Flower</h3>
+                <p>Flowers</p>
+            </div>
+        </div>
+
+        <!-- FOOD -->
+        <div class="card" data-category="food" data-title="Pasta">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80" alt="Pasta">
+            <div class="caption">
+                <h3>Delicious Pasta</h3>
+                <p>Food</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="food" data-title="Pizza">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Pizza">
+            <div class="caption">
+                <h3>Cheesy Pizza</h3>
+                <p>Food</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="food" data-title="Dessert">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=80" alt="Dessert">
+            <div class="caption">
+                <h3>Sweet Dessert</h3>
+                <p>Food</p>
+            </div>
+        </div>
+
+        <!-- ANIMALS -->
+        <div class="card" data-category="animals" data-title="Cat">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" alt="Cat">
+            <div class="caption">
+                <h3>Cute Cat</h3>
+                <p>Animals</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="animals" data-title="Dog">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80" alt="Dog">
+            <div class="caption">
+                <h3>Happy Dog</h3>
+                <p>Animals</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="animals" data-title="Elephant">
+            <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80" alt="Elephant">
+            <div class="caption">
+                <h3>Elephant</h3>
+                <p>Animals</p>
+            </div>
+        </div>
+
+        <!-- NATURE -->
+        <div class="card" data-category="nature" data-title="Forest">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80" alt="Forest">
+            <div class="caption">
+                <h3>Green Forest</h3>
+                <p>Nature</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="nature" data-title="Waterfall">
+            <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=800&q=80" alt="Waterfall">
+            <div class="caption">
+                <h3>Waterfall</h3>
+                <p>Nature</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="nature" data-title="Sunset">
+            <img src="https://images.unsplash.com/photo-1472120435266-53107fd0c44a?auto=format&fit=crop&w=800&q=80" alt="Sunset">
+            <div class="caption">
+                <h3>Golden Sunset</h3>
+                <p>Nature</p>
+            </div>
+        </div>
+
+        <!-- TRAVEL -->
+        <div class="card" data-category="travel" data-title="Airplane">
+            <img src="https://media.istockphoto.com/id/536016801/photo/airplane-wing-in-flight.jpg?s=170667a&w=0&k=20&c=c4RJEbcr3y200oLP4P4WxXBKcFJ3Wr2904PgjH0uMgU=" alt="Airplane">
+            <div class="caption">
+                <h3>Travel Adventure</h3>
+                <p>Travel</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="travel" data-title="Road Trip">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="Road Trip">
+            <div class="caption">
+                <h3>Road Trip</h3>
+                <p>Travel</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="travel" data-title="Mountains">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Mountains">
+            <div class="caption">
+                <h3>Travel Mountains</h3>
+                <p>Travel</p>
+            </div>
+        </div>
+
+        <!-- ARCHITECTURE -->
+        <div class="card" data-category="architecture" data-title="Building">
+            <img src="https://media.istockphoto.com/id/2181045421/photo/the-center-of-heydar-aliyev.jpg?s=170667a&w=0&k=20&c=7CQDNV-SWNWLR0N7gqxamahHCqu8g2LVJkLiynCWRqs=" alt="Building">
+            <div class="caption">
+                <h3>Modern Building</h3>
+                <p>Architecture</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="architecture" data-title="Bridge">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80" alt="Bridge">
+            <div class="caption">
+                <h3>City Bridge</h3>
+                <p>Architecture</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="architecture" data-title="House">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="House">
+            <div class="caption">
+                <h3>Modern House</h3>
+                <p>Architecture</p>
+            </div>
+        </div>
+
+        <!-- ART -->
+        <div class="card" data-category="art" data-title="Painting">
+            <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=800&q=80" alt="Painting">
+            <div class="caption">
+                <h3>Colorful Painting</h3>
+                <p>Art</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="art" data-title="Creative Art">
+            <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=800&q=80" alt="Creative Art">
+            <div class="caption">
+                <h3>Creative Art</h3>
+                <p>Art</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="art" data-title="Abstract Art">
+            <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80" alt="Abstract Art">
+            <div class="caption">
+                <h3>Abstract Art</h3>
+                <p>Art</p>
+            </div>
+        </div>
+
+    </section>
+
+    <p id="noResults">No images found 🔍</p>
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <button class="close" id="closeBtn" type="button">&times;</button>
+
+    <button class="prev" id="prevBtn" type="button">&#10094;</button>
+
+    <div class="lightbox-content">
+        <img id="lightboxImage" src="" alt="">
+        <h2 id="lightboxTitle"></h2>
+        <p id="lightboxCategory"></p>
+    </div>
+
+    <button class="next" id="nextBtn" type="button">&#10095;</button>
+</div>
+
+<footer>
+    <p>© 2026 Pixel Gallery | CodeAlpha Frontend Development</p>
+</footer>
+
+</body>
+</html>
